@@ -37,6 +37,7 @@ from diffusers.utils.testing_utils import (
     numpy_cosine_similarity_distance,
     require_peft_backend,
     require_torch_gpu,
+    require_torch_accelerator,
     slow,
     torch_device,
 )
@@ -207,7 +208,7 @@ class StableDiffusionLoRATests(PeftLoraLoaderMixinTests, unittest.TestCase):
 
 
 @slow
-@require_torch_gpu
+@require_torch_accelerator
 @require_peft_backend
 class LoraIntegrationTests(unittest.TestCase):
     def setUp(self):
