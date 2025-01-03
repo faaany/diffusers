@@ -22,7 +22,6 @@ from diffusers.utils import is_xformers_available, logging
 from diffusers.utils.testing_utils import (
     numpy_cosine_similarity_distance,
     require_accelerator,
-    require_torch_gpu,
     require_torch_accelerator,
     slow,
     torch_device,

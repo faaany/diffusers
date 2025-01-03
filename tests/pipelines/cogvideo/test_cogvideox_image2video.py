@@ -26,7 +26,6 @@ from diffusers.utils import load_image
 from diffusers.utils.testing_utils import (
     enable_full_determinism,
     numpy_cosine_similarity_distance,
-    require_torch_gpu,
     require_torch_accelerator,
     slow,
     torch_device,

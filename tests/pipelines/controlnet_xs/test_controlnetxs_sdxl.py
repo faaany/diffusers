@@ -31,7 +31,13 @@ from diffusers import (
     UNet2DConditionModel,
 )
 from diffusers.utils.import_utils import is_xformers_available
-from diffusers.utils.testing_utils import enable_full_determinism, load_image, require_torch_accelerator, slow, torch_device
+from diffusers.utils.testing_utils import (
+    enable_full_determinism,
+    load_image,
+    require_torch_accelerator,
+    slow,
+    torch_device,
+)
 from diffusers.utils.torch_utils import randn_tensor
 
 from ...models.autoencoders.vae import (

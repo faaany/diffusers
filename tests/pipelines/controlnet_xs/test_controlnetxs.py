@@ -40,7 +40,6 @@ from diffusers.utils.testing_utils import (
     load_numpy,
     require_accelerator,
     require_torch_2,
-    require_torch_gpu,
     require_torch_accelerator,
     run_test_in_subprocess,
     slow,

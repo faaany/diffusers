@@ -40,8 +40,8 @@ from diffusers.utils.testing_utils import (
     load_image,
     load_numpy,
     require_torch_2,
-    require_torch_gpu,
     require_torch_accelerator,
+    require_torch_gpu,
     run_test_in_subprocess,
     slow,
     torch_device,
@@ -964,7 +964,7 @@ class ControlNetPipelineSlowTests(unittest.TestCase):
             num_inference_steps=2,
             output_type="np",
         )
-        
+
         if torch_device == "cuda":
             mem_bytes = torch.cuda.max_memory_allocated()
         elif torch_device == "xpu":
